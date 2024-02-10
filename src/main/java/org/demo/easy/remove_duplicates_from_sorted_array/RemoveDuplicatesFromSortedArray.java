@@ -1,4 +1,4 @@
-package org.demo.remove_duplicates_from_sorted_array;
+package org.demo.easy.remove_duplicates_from_sorted_array;
 
 import java.util.Arrays;
 

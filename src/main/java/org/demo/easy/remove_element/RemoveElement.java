@@ -1,4 +1,4 @@
-package org.demo.remove_element;
+package org.demo.easy.remove_element;
 
 import java.util.Arrays;
 
@@ -16,9 +16,7 @@ public class RemoveElement {
         int[] sortedNums = Arrays.stream(nums)
                 .filter(value -> value != val)
                 .toArray();
-        for (int i = 0; i < sortedNums.length; i++) {
-            nums[i] = sortedNums[i];
-        }
+        System.arraycopy(sortedNums, 0, nums, 0, sortedNums.length);
         return sortedNums.length;
     }
 }
